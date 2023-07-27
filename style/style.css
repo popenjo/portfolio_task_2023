@@ -64,8 +64,25 @@
     width:100%; height:8px;
     background:#222;
     border-radius:5px;
+    animation:1s menu both;
 }
-.all .header .menu span:nth-child(1) {}
+/* .all .header .menu span:hover:nth-child(1) {
+    animation:1s menu both;
+}
+.all .header .menu span:hover:nth-child(3) {
+    animation:1s menu2 both;
+} */
+@keyframes menu {
+    0% {transform:translateY(0) rotate(0);}
+    100% {transform:translateY(20px) rotate(45deg);}
+}
+@keyframes menu2 {
+    0% {transform:translateY(0) rotate(0);}
+    100% {transform:translateY(-20px) rotate(-45deg);}
+}
+.all .header .menu span:nth-child(1) {
+    
+}
 .all .header .menu span:nth-child(2) {}
 .all .header .menu span:nth-child(3) {}
 /* main */
